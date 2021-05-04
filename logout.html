@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<html>
+<head>
+<meta charset="utf-8">
+<title>شبكة العالم نت اللاسلكية</title>
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap/css/login.css" media="screen">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" media="screen">
+<link rel="stylesheet" type="text/css" href="bootstrap/css/rtl_bootstrap.css">
+		
+<script language="JavaScript">
+<!--
+$(if advert-pending == 'yes')
+    var popup = '';
+    function focusAdvert() {
+	if (window.focus) popup.focus();
+    }
+    function openAdvert() {
+	popup = open('$(link-advert)', 'hotspot_advert', '');
+	setTimeout("focusAdvert()", 1000);
+    }
+$(endif)
+    function openLogout() {
+	if (window.name != 'hotspot_status') return true;
+        open('$(link-logout)', 'hotspot_logout', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=280,height=250');
+	window.close();
+	return false;
+    }
+//-->
+</script>
+<script language="JavaScript">
+
+function readablizeBytes(bytes) {
+var s = ['bytes', 'kb', 'MB', 'GB', 'TB', 'PB'];
+var e = Math.floor(Math.log(bytes)/Math.log(1024));
+return (bytes/Math.pow(1024, Math.floor(e))).toFixed(2)+" "+s[e];
+}
+
+</script>
+<script language="JavaScript">
+
+function readablizeBytes(bytes) {
+var s = ['&#1576;&#1575;&#1610;&#1578;', '&#1603;&#1610;&#1604;&#1608;&#1576;&#1575;&#1610;&#1578;', '&#1605;&#1610;&#1580;&#1575;&#1576;&#1575;&#1610;&#1578;', '&#1580;&#1610;&#1580;&#1575;&#1576;&#1575;&#1610;&#1578;', '&#1578;&#1610;&#1585;&#1575;&#1576;&#1575;&#1610;&#1578;', 'PB'];
+var e = Math.floor(Math.log(bytes)/Math.log(1024));
+return (bytes/Math.pow(1024, Math.floor(e))).toFixed(2)+" "+s[e];
+}
+
+</script>
+
+</head>
+
+<body class="login container-fluid">
+
+<div class="up"></div>
+
+<div class="line"></div>
+
+
+
+	
+	
+
+
+
+	
+<div style="margin:0;padding:0;display:inline"></div>
+<img class="logo" src="logo.png" />
+<div class="container">
+
+<div id="wrapper">
+
+				
+						<div class="content">
+							<div class="inner">
+								
+								
+								
+				<br>
+				
+				<div class="banner">
+			<blockquote>
+			<h3>تم تسجيل الخروج بنجاح</h3>
+
+			
+			 
+			 
+			
+			</blockquote>
+	  </div>
+	  <p><h2>عزيزي المستخدم .. تذكر ان الله فوق كل شيء رقيب .. فاجعل استخدامك للإنترنت فيما يرضيه وتستفيد</h2></p>
+	  
+								
+							</div>
+							 
+							<form class="ma_2" action="$(link-alogin)" name="alogin" onSubmit="return openaLogin()">
+		 
+		<div class="table-wrapper">
+										<table class="table">
+									  <tr>
+										<th>الوقت المستخدم</th>
+										<th id="uptime">$(uptime)</th>
+									  </tr>
+									  
+									  $(if session-time-left)
+									  <tr>
+										<th>الوقت المتبقي</th>
+										<th id="timeLeft">$(session-time-left)</th>
+									  </tr>
+									   $(endif)
+									   
+									   $(if remain-bytes-total)
+									  <tr>
+										<th> التحميل المتبقي لديك</th>
+										<th><script language="JavaScript">document.write(readablizeBytes($(remain-bytes-total)));</script></th>
+									  </tr>
+									   $(endif)
+									   
+									   $(if bytes-out)
+									  <tr>
+										<th> التحميل المستخدم</th>
+										<th><script language="JavaScript">document.write(readablizeBytes($(bytes-out)));</script></th>
+									  </tr>
+									  $(endif)
+									  
+									  </table>
+								</div>
+		
+			
+
+	
+
+<form action="$(link-alogin)" name="alogin" onSubmit="return openLogin()">
+<input value="log in" type="hidden">
+<button type="submit" class="btn btn-secondary btn-lg btn-block" >تسجيل الدخول</button>
+
+</form>
+							
+						</div>	
+							</div>
+							</div>
+							</div>
+						</div>
+						
+						<br><br><br><br><br><br><br><br>
+<div class="card-footer">
+<article id="about" class="text-muted">
+								<h3>خدمة العملاء</h3>
+								
+								<center>
+								<p> للتواصل معنا عبر واتساب يرجى الضغط على الرقم:</p>
+								<a href="https://api.whatsapp.com/send?phone=967733204610"><h3>733204610</h3></a>
+								</center>
+							</article>
+							</div>
+							
+							
+							
+<script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
+</script>
+
+<script src="bootstrap/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script type="text/javascript">
+document.getElementById("timeLeft").innerHTML = "$(session-time-left)".replace("w", " أسبوع , ").replace("d", " يوم , ").replace("h", " ساعة , ").replace("m", " دقيقة , ").replace("s", " ثانية");
+</script>
+
+
+<script type="text/javascript">
+document.getElementById("uptime").innerHTML = "$(uptime)".replace("w", " أسبوع , ").replace("d", " يوم , ").replace("h", " ساعة , ").replace("m", " دقيقة , ").replace("s", " ثانية");
+</script>
+</body>
+</html>

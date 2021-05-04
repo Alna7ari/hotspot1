@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<html>
+<head>
+<meta charset="utf-8">
+<title>شبكة العالم نت اللاسلكية</title>
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap/css/login.css" media="screen">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" media="screen">
+
+<style>
+.img1 {
+width: 48%
+}
+</style>
+</head>
+
+<body class="login container-fluid">
+
+<div class="up"></div>
+
+<div class="line"></div>
+
+
+$(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="status.html" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+$(endif)
+
+
+<form class="vertical-form" name="login" action="$(link-login-only)" method="post"
+	$(if chap-id) onSubmit="return doLogin()" $(endif)>
+	
+<input type="hidden" name="dst" value="status.html" />
+<input type="hidden" name="popup" value="true" />
+<div style="margin:0;padding:0;display:inline"></div>
+<img class="logo" src="logo.png" />
+<div class="container">
+<div class="form-group">
+<input class="form-control" name="username" type="text" value="" placeholder="ادخل اسم المستخدم هنا" size="30" /><br>
+<input class="form-control" name="password" type="text" value="" placeholder="ادخل كلمة السر هنا" size="30" />
+<input name="submit" type="submit" value="تسجيل الدخول" />
+</div>
+<div class='footer'>
+<h2>
+
+
+	 </h2>
+	 <span id="hidden" style="display:block;">
+	 
+
+
+<p>
+
+<span style="color: #00BCD4; font-size: 16px">$(if error)
+<span><strong><script type="text/javascript">
+var error = "$(error)";
+if (error == "simultaneous session limit reached") {
+document.write("المعذرة ، هذا الحساب مستخدم حالياً في جهاز آخر . ");
+}
+else if (error == "invalid password") {
+document.write("تاكد من كتابة كلمة المرور بشكل صحيح");
+}
+else if (error == "uptime limit reached") {
+document.write("عذراً لقد انتهى الوقت المتاح لك..");
+}
+else if (error == "invalid username or password") {
+document.write("خطأ في كلمة المرور");
+}
+else if (error.search("traffic limit") != -1) {
+document.write("لقد انتهى رصيد تحميل هذا الحساب");
+}
+else if (error == "no valid profile found") {
+document.write("لقد انتهت صلاحية هذا الحساب .");
+}
+else if(error.search("uptime limit") != -1) {
+document.write("لقد انتهى رصيد هذا الحساب");	
+}
+else if(error.search("not found") != -1) {
+document.write("لقد ادخلت اسم المستخدم بطريقة غير صحيحة، الرجاء المحاولة مرة اخرى ");	
+}
+else if (error == "invalid Calling-Station-Id") {
+document.write("هذا الحساب مقترن بجهاز آخر، لمزيد من المعلومات يرجى الاتصال بخدمة العملاء");
+}
+else document.write("$(error)<br />")
+</script></strong></span>
+
+$(else)
+$(endif)</span></p></span>
+
+
+</form>
+</div>
+<article id="intro">
+								<h2>أسعار الكروت</h2>
+								
+										<table class="table">
+	  <tr>
+										<th style="text-align: center;">السعر</th>
+										<th style="text-align: center;">الوقت</th>
+										<th style="text-align: center;">الصلاحية</th>
+										<th style="text-align: center;">التحميل</th>
+									  </tr>
+									  <tr>
+										<td style="text-align: center;">100 ريال</td>
+										<td style="text-align: center;">3 ساعات</td>
+										<td style="text-align: center;">يوم واحد</td>
+										<td style="text-align: center;">غير محدود</td>
+									  </tr>
+									  <tr class="table-primary">
+										<td style="text-align: center;">200 ريال</td>
+										<td style="text-align: center;">7 ساعات</td>
+										<td style="text-align: center;">يومين</td>
+										<td style="text-align: center;">غير محدود</td>
+									  </tr>
+									  <tr>
+										<td style="text-align: center;">1000 ريال</td>
+										<td style="text-align: center;">غير محدود</td>
+										<td style="text-align: center;">7 ايام</td>
+										<td style="text-align: center;">غير محدود</td>
+									  </tr>
+									  <tr class="table-primary">
+										<td style="text-align: center;">3000 ريال</td>
+										<td style="text-align: center;">غير محدود</td>
+										<td style="text-align: center;">30 يوم</td>
+										<td style="text-align: center;">10 جيجا بايت</td>
+									  </tr>
+								</table>
+								
+
+							</article>
+							<br><br><br><br>
+					<article id="sellpoints ">		
+		<h2>نقاط البيع</h2>
+								
+										<table class="table">
+									
+									  <tr class="table-primary">
+										<td style="text-align: center;">المركز الرئيسي العالم نت جوار جمعية القعيطي</td>
+										
+									  </tr>
+									  <tr>
+										<td style="text-align: center;">بقالة الخيرات الحضرمي</td>
+										
+									  </tr>
+									  <tr class="table-primary">
+										<td style="text-align: center;">سوبر ماركت بن حمدين</td>
+										
+									  </tr>
+									  <tr>
+										<td style="text-align: center;">بقالة زهرة المدائن</td>
+										
+									  </tr>
+									  <tr class="table-primary">
+										<td style="text-align: center;">بقالة السعادة فكري
+							  </tr>
+							  
+									
+									  <tr>
+										<td style="text-align: center;">سوبر ماركت سليم</td>
+										
+									  </tr>
+									  <tr class="table-primary">
+										<td style="text-align: center;">بقالة العليمي (سوق الخضرة)</td>
+										
+									  </tr>
+									  
+								</table>									
+</article>
+</div>
+
+<br><br><br><br>
+
+<br><br><br>
+<div class="card-footer">
+<article id="about" class="text-muted">
+								<h3>خدمة العملاء</h3>
+								
+								<center>
+								<p> للتواصل معنا عبر واتساب يرجى الضغط على الرقم:</p>
+								<a href="https://api.whatsapp.com/send?phone=967733204610"><h3>733204610</h3></a>
+								</center>
+							</article>
+							</div>
+							
+<script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
+</script>
+
+<script src="bootstrap/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</body>
+</html>
